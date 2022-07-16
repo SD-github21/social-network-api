@@ -14,7 +14,7 @@ const userController = {
     // get one user by its id and populate thought and friend data
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
-        //   .populate('thoughts')
+          .populate('thoughts')
         //   .populate('friends')
           .then(dbUserData => {
             // if no user is found, send 404
@@ -41,7 +41,7 @@ const userController = {
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true })
           .then(dbUserData => {
-            if(!dbUserData) {
+            if (!dbUserData) {
                 res.status(404).json({ message: 'No user found with this id!'});
                 return;
             }
@@ -61,7 +61,39 @@ const userController = {
             res.json(dbUserData);
           })
            .catch(err => res.status(404).json(err));
-    }
+    },
+
+        // add a friend to a user
+        addFriend({ params}, res) {
+            User.findOneAndUpdate(
+                { _id: params.userId },
+                { $push: { friends: _id } },
+                { new: true, runValidators: true})
+              .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this id!' });
+                    return;
+                }
+                res.json(dbUserData);
+              })
+              .catch(err => res.status(400).json(err));
+        },
+
+        // delete a friend from a user
+        deleteFriend({ params }, res) {
+            User.findOneAndUpdate(
+                { _id: params.id},
+                { $pull: { friends: _id} },
+                { new: true, runValidators: true})
+            .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this id!' });
+                    return;
+                }
+                res.json(dbUserData);
+            })
+            .catch(err => res.status(400).json(err));
+        }
 };
 
 
