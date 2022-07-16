@@ -14,8 +14,7 @@ const userController = {
     // get one user by its id and populate thought and friend data
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
-          .populate('thoughts')
-        //   .populate('friends')
+          .populate(['thoughts', 'friends'])
           .then(dbUserData => {
             // if no user is found, send 404
             if (!dbUserData) {
