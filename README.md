@@ -5,8 +5,6 @@
 ## **Description**
 The purpose of this project was to build an API for a social network website. The social netwok application allows for users to share their thoughts, reactions to others' thoughts, and create a list of friends.  
 
-<br>
-
 ## **Table of Contents**
 [User Story](#user-story)<br>
 [Acceptance Criteria](#acceptance-criteria)<br>
@@ -14,9 +12,7 @@ The purpose of this project was to build an API for a social network website. Th
 [Contributing](#contributing)<br>
 [Tests](#tests)<br>
 [Built With](#built-with)<br>
-[Walkthrough Video](#video-of-e-commerce-back-end)<br>
-
-<br>
+[Walkthrough Video](#video-of-social-network-api)<br>
 
 ### **User Story**
 AS A social media startup<br>
@@ -39,17 +35,11 @@ This project is covered under the following license: ISC<br>
 https://opensource.org/licenses/ISC
 
 
-<br>
-
 ### **Contributing**
 This project does not include any contributors
 
-<br>
-
 ### **Tests**
 No tests were utilized in the creation of this application.
-
-<br>
 
 ### **Built With**
 * JavaScript
@@ -57,8 +47,6 @@ No tests were utilized in the creation of this application.
 * Express.js
 * MongoDB
 * Mongoose
-
-<br>
 
 ### **Video of Social Network API**
 Social Network API Part 1 
