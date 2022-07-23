@@ -10,8 +10,6 @@ The purpose of this project was to build an API for a social network website. Th
 ## **Table of Contents**
 [User Story](#user-story)<br>
 [Acceptance Criteria](#acceptance-criteria)<br>
-[Installation](#installation)<br>
-[Usage](#usage)<br>
 [License](#license)<br>
 [Contributing](#contributing)<br>
 [Tests](#tests)<br>
@@ -35,3 +33,46 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia<br>
 THEN I am able to successfully create, update, and delete users and thoughts in my database<br>
 WHEN I test API POST and DELETE routes in Insomnia<br>
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list<br>
+
+### **License**
+This project is covered under the following license: ISC<br>
+https://opensource.org/licenses/ISC
+
+
+<br>
+
+### **Contributing**
+This project does not include any contributors
+
+<br>
+
+### **Tests**
+No tests were utilized in the creation of this application.
+
+<br>
+
+### **Built With**
+* JavaScript
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+
+<br>
+
+### **Video of Social Network API**
+Social Network API Part 1 
+- This video demonstrates starting the server, syncing up the Mongoose models, and showing all of the technical acceptance criteria being met (model files and utility file with date formatting)
+
+https://drive.google.com/file/d/1Eyqwp2CCPnBVUazVRsmCwHVknqPi82Vk/view
+
+Social Network API Part 2
+- This video demonstrates all user and friend list functionality, including creating new users, getting all users, getting a user by ID, updating a user, deleting a user, adding a friend and deleting a friend
+
+https://drive.google.com/file/d/1sYFkW_SKyjL5GRoQwYjoEPOlUG8XIN7I/view
+
+Social Network API Part 3
+- This video demonstrates all thought and reaction functionality, including creating a new thought, getting all thoughts, getting a thought by ID, updating a thought, adding a reaction, deleting a reaction, and deleting a thought
+
+https://drive.google.com/file/d/1iLLUT_kOcXsBof-FM0x13OyHRX5-zzJp/view
+
